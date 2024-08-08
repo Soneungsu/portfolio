@@ -7,6 +7,7 @@ const Contact = () => {
         <div>
           <h2 className="">Contact</h2>
         </div>
+        <p></p>
       </section>
     </>
   );
