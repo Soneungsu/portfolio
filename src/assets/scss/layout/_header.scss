@@ -1,6 +1,9 @@
 /* header */
 
 header {
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
   padding: 20px 20px;
   color: white;
   background: black;
@@ -9,6 +12,7 @@ header {
     cursor: pointer;
   }
   .nav-wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
