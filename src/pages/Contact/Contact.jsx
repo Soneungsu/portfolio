@@ -15,7 +15,7 @@ const Contact = () => {
               <div className="profile-wrapper">
                 <section>
                   <img
-                    src={profile}
+                    src="/public_assets/images/profile.jpeg"
                     alt=""
                     width="500px"
                     height="500px"
