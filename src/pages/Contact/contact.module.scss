@@ -4,6 +4,7 @@
   .contact-wrapper {
     height: 100%;
     width: 100%;
+
     .contact {
       text-align: center;
       font-weight: bolder;
@@ -11,24 +12,60 @@
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     }
-    .info-wrapper a {
-      color: black;
-      text-decoration: none;
-      display: block;
-    }
-    .profile-container {
-      width: 100%;
-      box-sizing: border-box;
-      .profile-wrapper {
-        margin: 30px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .info-description {
-        width: 500px;
-        height: 500px;
+    .profile-main {
+      margin-top: 100px;
+
+      .profile-container {
+        width: 100%;
+        box-sizing: border-box;
+        .profile-wrapper {
+          margin: 30px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          .info-description {
+            width: 500px;
+            height: 500px;
+
+            .usedtool-wrapper,
+            .career-wrapper {
+              margin: 30px 0;
+            }
+
+            .used-tool,
+            .career {
+              text-align: center;
+              font-weight: bolder;
+              font-size: 30px;
+              font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+                serif;
+              p {
+                margin: 10px 10px;
+              }
+            }
+            .tool-list {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              p {
+                margin: 10px 10px;
+              }
+            }
+            .career-list {
+              text-align: center;
+            }
+
+            .info-wrapper {
+              text-align: center;
+              a {
+                color: black;
+                text-decoration: none;
+                display: block;
+              }
+            }
+          }
+        }
       }
     }
   }

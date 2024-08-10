@@ -2,5 +2,6 @@
 @import url(./assets/scss/layout/_header.scss);
 /* main */
 @import url(./pages/Main/main.module.scss);
+@import url(./pages/Skills/sjills.module.scss);
 @import url(./pages/Project/project.module.scss);
 @import url(./pages/Contact/contact.module.scss);/*# sourceMappingURL=global.css.map */

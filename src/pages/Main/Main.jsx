@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Project from "../Project/Project.jsx";
 import Contact from "../Contact/Contact.jsx";
+import Skills from "../Skills/Skills.jsx";
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -15,10 +17,11 @@ const Main = () => {
             </section>
           </section>
         </section>
+        {/* project section */}
+        <Project />
         {/* skill sectioc */}
-
+        <Skills />
         {/* Contact section */}
-
         <Contact />
       </main>
     </>
