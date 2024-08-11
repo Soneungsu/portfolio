@@ -1,1 +1,10 @@
-/*# sourceMappingURL=project.module.css.map */
+.project-container {
+  width: 100%;
+  height: 100vh;
+}
+.project-container .project {
+  text-align: center;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+}/*# sourceMappingURL=project.module.css.map */
