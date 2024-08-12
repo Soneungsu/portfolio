@@ -29,6 +29,11 @@
             height: 500px;
             display: flex;
             align-items: center;
+            .info-description-wrapper {
+              width: 100%;
+              box-sizing: border-box;
+              text-align: center;
+            }
             .usedtool-wrapper,
             .career-wrapper {
               margin: 30px 0;
@@ -75,6 +80,7 @@
                 display: block;
                 margin: 10px 0;
                 font-weight: bolder;
+                text-align: center;
               }
             }
           }

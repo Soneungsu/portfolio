@@ -22,7 +22,7 @@ const Contact = () => {
                   />
                 </section>
                 <section className="info-description">
-                  <section>
+                  <section className="info-description-wrapper">
                     <section className="usedtool-wrapper">
                       <h1 className="used-tool">USED TOOL</h1>
                       <div className="tool-list">
