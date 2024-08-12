@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import profile from "../../../public/public_assets/images/profile.jpeg";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
