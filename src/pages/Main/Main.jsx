@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import Project from "../Project/Project.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Skills from "../Skills/Skills.jsx";
+import txt from "../../assets/data/txt.jsx";
 
 const Main = () => {
-  const txt = "꿈을 향해 올라가는 개발자 손응수 입니다.";
   const [text, setText] = useState("");
   const [count, setCount] = useState(0);
 
