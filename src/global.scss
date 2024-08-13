@@ -5,8 +5,10 @@
 /* main */
 @import url(./pages/Main/main.module.scss);
 // skills
-// @import url(./pages/Skills/sjills.module.scss);
+@import url(./pages/Skills/skills.module.scss);
 // project
 @import url(./pages/Project/project.module.scss);
 // contact
 @import url(./pages/Contact/contact.module.scss);
+// Footer
+@import url(./assets/scss/layout/_footer.scss);

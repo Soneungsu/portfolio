@@ -15,9 +15,9 @@ const Contact = () => {
                 <section>
                   <img
                     src="/public_assets/images/profile.jpeg"
-                    alt=""
-                    width="500px"
-                    height="500px"
+                    alt="프로밀사진"
+                    width="400px"
+                    height="400px"
                     style={{ borderRadius: "50%" }}
                   />
                 </section>

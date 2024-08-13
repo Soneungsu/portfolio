@@ -1,0 +1,13 @@
+// footer
+
+.foot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  .foot-wrap p {
+    color: white;
+  }
+}

@@ -31,10 +31,10 @@ const Main = () => {
             </section>
           </section>
         </section>
-        {/* project section */}
-        <Project />
         {/* skill sectioc */}
         <Skills />
+        {/* project section */}
+        <Project />
         {/* Contact section */}
         <Contact />
       </main>

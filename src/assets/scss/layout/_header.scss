@@ -16,6 +16,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .mo-togglemenubtn {
+      // display: none;
+    }
     .list-items {
       display: flex;
       justify-content: center;
@@ -30,5 +33,12 @@ header {
         color: aqua;
       }
     }
+  }
+}
+
+// 모바일
+@media (max-width: 768px) {
+  .list-items {
+    display: none !important;
   }
 }
