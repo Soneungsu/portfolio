@@ -7,6 +7,7 @@ import txt from "../../assets/data/txt.jsx";
 const Main = () => {
   const [text, setText] = useState("");
   const [count, setCount] = useState(0);
+  const homeRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
