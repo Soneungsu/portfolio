@@ -24,47 +24,50 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="nav-wrapper">
+        <nav className={isMobile ? "mo-nav" : "nav-wrapper"}>
           <div className="main-titlename">SON PORTFOLIO</div>
-          <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
-            ☰
-          </button>
+          {isMobile ? (
+            <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
+              ☰
+            </button>
+          ) : (
+            <ol
+              className={`list-items ${
+                menuOpen || !isMobile ? "list-items" : "mobile-nav"
+              }`}
+            >
+              <li
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                HOME
+              </li>
+              <li
+                onClick={() => {
+                  navigate("/skills");
+                }}
+              >
+                SKILLS
+              </li>
+              <li
+                onClick={() => {
+                  navigate("/project");
+                }}
+              >
+                PROJECT
+              </li>
+              <li
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              >
+                CONTACT
+              </li>
+            </ol>
+          )}
 
           {/* 메뉴가 false일 경우 모바일 nav, true일경우 데스크탑 nav */}
-          <ol
-            className={`list-items ${
-              menuOpen || !isMobile ? "list-items" : "mobile-nav"
-            }`}
-          >
-            <li
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              HOME
-            </li>
-            <li
-              onClick={() => {
-                navigate("/skills");
-              }}
-            >
-              SKILLS
-            </li>
-            <li
-              onClick={() => {
-                navigate("/project");
-              }}
-            >
-              PROJECT
-            </li>
-            <li
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              CONTACT
-            </li>
-          </ol>
         </nav>
       </header>
     </>

@@ -38,7 +38,23 @@ header {
 
 // 모바일
 @media (max-width: 768px) {
-  .list-items {
-    display: none !important;
+  .mo-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .mo-togglemenubtn {
+      display: block !important;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+    }
+    .list-items {
+      display: none !important;
+    }
   }
 }

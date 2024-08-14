@@ -6,6 +6,9 @@ import node_Icon from "../img/skill/images_Node.svg";
 import sass_Icon from "../img/skill/images_Sass.svg";
 import git_Icon from "../img/skill/images_Git.png";
 import github_Icon from "../img/skill/images_Github.png";
+import jira_Icon from "../img/skill/images_Jira.svg";
+import notion_Icon from "../img/skill/images_Notion.svg";
+import bootstrap_Icon from "../img/skill/images_Bootstrap.svg";
 
 export const skillList = [
   {
@@ -47,5 +50,20 @@ export const skillList = [
     src: github_Icon,
     name: "GitHub",
     alt: "GitHub 아이콘",
+  },
+  {
+    src: jira_Icon,
+    name: "Jira",
+    alt: "Jira 아이콘",
+  },
+  {
+    src: notion_Icon,
+    name: "Notion",
+    alt: "Notion 아이콘",
+  },
+  {
+    src: bootstrap_Icon,
+    name: "Bootstrap",
+    alt: "Bootstrap 아이콘",
   },
 ];
