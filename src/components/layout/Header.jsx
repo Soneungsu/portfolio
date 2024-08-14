@@ -31,11 +31,7 @@ const Header = () => {
               ☰
             </button>
           ) : (
-            <ol
-              className={`list-items ${
-                menuOpen || !isMobile ? "list-items" : "mobile-nav"
-              }`}
-            >
+            <ol className="list-items">
               <li
                 onClick={() => {
                   navigate("/");
