@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-// import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useState, useRef } from "react";
 import Project from "../Project/Project.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Skills from "../Skills/Skills.jsx";
@@ -20,6 +19,7 @@ const Main = () => {
     }
     return () => clearInterval(interval);
   });
+
   return (
     <>
       <main>

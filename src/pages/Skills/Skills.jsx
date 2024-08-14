@@ -14,7 +14,7 @@ const Skills = () => {
               {skillList.map((item, index) => {
                 return (
                   <li className="logo" key={index}>
-                    <div>
+                    <div className="logo-wrap">
                       <img src={item.src} alt="로고 이미지" />
                     </div>
                     <p>{item.name}</p>
