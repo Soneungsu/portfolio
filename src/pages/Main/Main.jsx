@@ -28,7 +28,7 @@ const Main = () => {
           <section className="info-wrappers">
             <section className="webportfolio">WEB PORTFOLIO</section>
             <section className="info-wrapper">
-              <p>{text}fff</p>
+              <p>{text}</p>
             </section>
           </section>
         </section>
