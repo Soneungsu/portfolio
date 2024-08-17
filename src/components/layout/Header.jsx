@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import hamburgerBtn from "../../assets/img/btn/images_hamburger.png";
+
+import FullMenu from "../../pages/FullMenu/FullMenu";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,7 +22,6 @@ const Header = () => {
 
   const handleMenuToggle = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
-    // console.log(menuOpen);
   };
 
   return (
@@ -27,9 +30,15 @@ const Header = () => {
         <nav className={isMobile ? "mo-nav" : "nav-wrapper"}>
           <div className="main-titlename">SON PORTFOLIO</div>
           {isMobile ? (
-            <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
-              ☰
-            </button>
+            <>
+              <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
+                <img
+                  className="hamburgetbtn"
+                  src={hamburgerBtn}
+                  alt="햄버거버튼"
+                />
+              </button>
+            </>
           ) : (
             <ol className="list-items">
               <li
@@ -65,6 +74,7 @@ const Header = () => {
 
           {/* 메뉴가 false일 경우 모바일 nav, true일경우 데스크탑 nav */}
         </nav>
+        {menuOpen === true ? <FullMenu /> : null}
       </header>
     </>
   );
