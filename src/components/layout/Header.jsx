@@ -18,7 +18,7 @@ const Header = () => {
 
   const handleMenuToggle = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
-    // console.log(menuOpen);
+    menuOpen === true;
   };
 
   return (
