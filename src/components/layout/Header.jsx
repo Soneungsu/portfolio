@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import hamburgerBtn from "../../assets/img/btn/images_hamburger.png";
 
 import FullMenu from "../../pages/FullMenu/FullMenu";
 
