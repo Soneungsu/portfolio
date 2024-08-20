@@ -1,6 +1,50 @@
-.skill-container {
+.skill-wrap {
+  text-align: center;
   width: 100%;
   height: 100vh;
+  .skill-title-wrap h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .skills-item-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    .skills-items {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+      width: 100%;
+      .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        .logo-wrap {
+          border: 1px solid black;
+          border-radius: 20px;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 1s;
+          &:hover {
+            background-color: #6bb1ff;
+          }
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .skill-wrap {
     text-align: center;
     .skill-title-wrap h1 {
@@ -15,7 +59,7 @@
       margin-top: 2rem;
       .skills-items {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         width: 100%;
         .logo {
@@ -38,56 +82,6 @@
             img {
               width: 60px;
               height: 60px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .skill-container {
-    width: 100%;
-    height: 100vh;
-    .skill-wrap {
-      text-align: center;
-      .skill-title-wrap h1 {
-        text-align: center;
-        font-weight: bolder;
-        font-size: 50px;
-      }
-      .skills-item-wrap {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin-top: 2rem;
-        .skills-items {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
-          width: 100%;
-          .logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            .logo-wrap {
-              border: 1px solid black;
-              border-radius: 20px;
-              width: 100px;
-              height: 100px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              transition: all 1s;
-              &:hover {
-                background-color: #6bb1ff;
-              }
-              img {
-                width: 60px;
-                height: 60px;
-              }
             }
           }
         }
