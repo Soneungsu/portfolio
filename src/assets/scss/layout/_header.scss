@@ -39,22 +39,24 @@ header {
 
 // 모바일
 
-.mo-nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .mo-togglemenubtn {
-    display: block !important;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-  }
-  .list-items {
-    display: none !important;
+@media (max-width: 768px) {
+  .mo-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .mo-togglemenubtn {
+      display: block !important;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+    }
+    .list-items {
+      display: none !important;
+    }
   }
 }
