@@ -6,9 +6,7 @@ const FullMenu = (props) => {
     <div className="full-container">
       <ol className="full-menu-wrap">
         {menuList.map((item, index) => {
-          <li className="items" key={index}>
-            {item}
-          </li>;
+          return <li key={index}>{item}</li>;
         })}
       </ol>
     </div>

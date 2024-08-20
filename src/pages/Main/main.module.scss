@@ -1,5 +1,6 @@
 main {
   width: 100%;
+
   .info-container {
     width: 100%;
     height: 100vh;
@@ -37,3 +38,9 @@ main {
 }
 
 // 반응형
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    z-index: 1;
+  }
+}

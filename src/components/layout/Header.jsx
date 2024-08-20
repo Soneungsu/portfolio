@@ -32,11 +32,7 @@ const Header = () => {
           {isMobile ? (
             <>
               <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
-                <img
-                  className="hamburgetbtn"
-                  src={hamburgerBtn}
-                  alt="햄버거버튼"
-                />
+                ☰
               </button>
             </>
           ) : (
@@ -71,11 +67,9 @@ const Header = () => {
               </li>
             </ol>
           )}
-
-          {/* 메뉴가 false일 경우 모바일 nav, true일경우 데스크탑 nav */}
         </nav>
-        {menuOpen === true ? <FullMenu /> : null}
       </header>
+      {isMobile && menuOpen ? <FullMenu /> : null}
     </>
   );
 };
