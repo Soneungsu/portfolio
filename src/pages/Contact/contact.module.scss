@@ -88,3 +88,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    width: 0;
+    height: 0;
+    .contact-wrapper {
+      width: 0;
+      height: 0;
+      .profile-main {
+        margin-top: 0;
+        .profile-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

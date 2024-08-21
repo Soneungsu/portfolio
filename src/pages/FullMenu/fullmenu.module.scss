@@ -4,6 +4,15 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+  #closebtn {
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
   .full-menu-wrap {
     z-index: 9999;
     width: 100%;
@@ -16,6 +25,7 @@
     .items {
       color: white;
       z-index: 9999;
+      font-weight: bolder;
     }
   }
 }
