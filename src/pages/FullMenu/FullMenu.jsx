@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import menuList from "../../assets/data/fullmenu";
 
 const FullMenu = (props) => {
-  const [closeBtn, setCloseBtn] = useState(false);
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="full-container">
       <button id="closebtn">X</button>

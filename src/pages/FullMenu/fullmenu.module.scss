@@ -5,9 +5,12 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   #closebtn {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
     position: fixed;
-    right: 20px;
-    top: 30px;
+    right: 30px;
+    top: 20px;
     color: white;
     border: none;
     background: none;
@@ -26,6 +29,11 @@
       color: white;
       z-index: 9999;
       font-weight: bolder;
+      margin: 1em 0;
+      cursor: pointer;
+      &:hover {
+        color: aqua;
+      }
     }
   }
 }
