@@ -19,10 +19,6 @@ const Header = () => {
     };
   }, []);
 
-  const handleMenuToggle = () => {
-    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
-  };
-
   return (
     <>
       <header>
@@ -30,7 +26,12 @@ const Header = () => {
           <div className="main-titlename">SON PORTFOLIO</div>
           {isMobile ? (
             <>
-              <button className="mo-togglemenubtn" onClick={handleMenuToggle}>
+              <button
+                className="mo-togglemenubtn"
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                }}
+              >
                 ☰
               </button>
             </>

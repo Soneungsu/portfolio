@@ -14,7 +14,12 @@ const FullMenu = (props) => {
 
   return (
     <div className="full-container">
-      <button id="closebtn" onClick={closeBtn}>
+      <button
+        id="closebtn"
+        onClick={() => {
+          closeBtn();
+        }}
+      >
         X
       </button>
 

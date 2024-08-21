@@ -36,7 +36,7 @@ const Contact = () => {
                     <section className="career-wrapper">
                       <h1 className="career">CAREER</h1>
                       <div className="career-list">
-                        <p>{`DKT(DK TECHIN)`} </p>
+                        <p>{`DKtechin a kakao company(DKT)`} </p>
                         <p>Localley PM</p>
                         <p>프로비트 거래소 운영 및 기획</p>
                       </div>
