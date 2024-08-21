@@ -51,11 +51,14 @@
     .skill-wrap {
       text-align: center;
       height: 100%;
-      .skills-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        width: 100%;
+      .skills-item-wrap {
+        margin-bottom: 2rem;
+        .skills-items {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          width: 100%;
+        }
       }
     }
   }
