@@ -8,6 +8,21 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
+  const navItems = [
+    {
+      label: "HOME",
+      path: "/",
+    },
+    { label: "SKILLS", path: "/skills" },
+    {
+      label: "PROJECT",
+      path: "/project",
+    },
+    {
+      label: "CONTACT",
+      path: "/contact",
+    },
+  ];
 
   useEffect(() => {
     const handleSize = () => {
@@ -18,7 +33,9 @@ const Header = () => {
       window.removeEventListener("resize", handleSize);
     };
   }, []);
-
+  const closeBtn = () => {
+    setMenuOpen(false);
+  };
   return (
     <>
       <header>
@@ -37,39 +54,18 @@ const Header = () => {
             </>
           ) : (
             <ol className="list-items">
-              <li
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                HOME
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/skills");
-                }}
-              >
-                SKILLS
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/project");
-                }}
-              >
-                PROJECT
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/contact");
-                }}
-              >
-                CONTACT
-              </li>
+              {navItems.map((item, index) => {
+                return (
+                  <li key={item.path} onClick={() => navigate(item.path)}>
+                    {item.label}
+                  </li>
+                );
+              })}
             </ol>
           )}
         </nav>
       </header>
-      {isMobile && menuOpen ? <FullMenu /> : null}
+      {isMobile && menuOpen && <FullMenu closeBtn={closeBtn} />}
     </>
   );
 };
