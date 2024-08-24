@@ -33,9 +33,11 @@ const Header = () => {
       window.removeEventListener("resize", handleSize);
     };
   }, []);
+
   const closeBtn = () => {
     setMenuOpen(false);
   };
+
   return (
     <>
       <header>
