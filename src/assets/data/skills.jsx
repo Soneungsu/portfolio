@@ -9,6 +9,7 @@ import github_Icon from "../img/skill/images_Github.png";
 import jira_Icon from "../img/skill/images_Jira.svg";
 import notion_Icon from "../img/skill/images_Notion.svg";
 import bootstrap_Icon from "../img/skill/images_Bootstrap.svg";
+import redux_Icon from "../img/skill/images_Redux.png";
 
 export const skillList = [
   {
@@ -65,5 +66,10 @@ export const skillList = [
     src: bootstrap_Icon,
     name: "Bootstrap",
     alt: "Bootstrap 아이콘",
+  },
+  {
+    src: redux_Icon,
+    name: "Redux",
+    alt: "Redux 아이콘",
   },
 ];

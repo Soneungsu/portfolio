@@ -5,7 +5,21 @@ const Project = () => {
     <>
       <section className="project-container">
         <div className="project-wrapper">
-          <h2 className="project">PROJECT</h2>
+          <div>
+            <h2 className="project">PROJECT</h2>
+          </div>
+          <ul className="project-items">
+            <li>
+              <div className="project-imgBox">이거</div>
+              <div></div>
+              <div></div>
+            </li>
+            <li>
+              <div className="project-imgBox">이거</div>
+              <div></div>
+              <div></div>
+            </li>
+          </ul>
         </div>
       </section>
     </>

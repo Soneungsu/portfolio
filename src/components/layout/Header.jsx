@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import FullMenu from "../../pages/FullMenu/FullMenu";
@@ -6,7 +6,7 @@ import FullMenu from "../../pages/FullMenu/FullMenu";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const categoryRef = useRef();
   const navigate = useNavigate();
   const navItems = [
     {

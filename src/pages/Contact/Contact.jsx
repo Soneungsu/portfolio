@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const userTool = ["JIRA", "FIGMA", "GIT", "GITHUB", "SLACK"];
   return (
     <>
       <section className="contact-container">
@@ -26,11 +27,9 @@ const Contact = () => {
                     <section className="usedtool-wrapper">
                       <h1 className="used-tool">USED TOOL</h1>
                       <div className="tool-list">
-                        <p>JIRA</p>
-                        <p>FIGMA</p>
-                        <p>NOTION</p>
-                        <p>GITHUB</p>
-                        <p>SLACK</p>
+                        {userTool.map((item, index) => {
+                          return <p key={index}>{item}</p>;
+                        })}
                       </div>
                     </section>
                     <section className="career-wrapper">
