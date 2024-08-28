@@ -55,7 +55,7 @@ const Header = () => {
               </button>
             </>
           ) : (
-            <ol className="list-items">
+            <ul className="list-items">
               {navItems.map((item, index) => {
                 return (
                   <li key={item.path} onClick={() => navigate(item.path)}>
@@ -63,7 +63,7 @@ const Header = () => {
                   </li>
                 );
               })}
-            </ol>
+            </ul>
           )}
         </nav>
       </header>
