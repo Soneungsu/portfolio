@@ -18,10 +18,39 @@
     margin: 2rem;
     li {
       background-color: #fafafa;
+      padding: 20px 0;
       .project-imgBox {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      .project-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        h1 {
+          font-size: 20px;
+          font-weight: bolder;
+          margin: 1rem;
+          color: #47a4ff;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .project-skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          margin: 0 10px;
+          border: 1px solid #47a4ff;
+          padding: 3px 10px;
+          border-radius: 10px;
+          color: #47a4ff;
+        }
       }
       .project-link {
         display: flex;
@@ -42,6 +71,22 @@
             background-color: #555;
           }
         }
+      }
+    }
+  }
+}
+
+// MO
+
+@media (max-width: 768px) {
+  .project-container {
+    width: 100%;
+    height: 100%;
+    .project-wrapper {
+      height: 100%;
+      .project-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
