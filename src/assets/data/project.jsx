@@ -27,8 +27,8 @@ const project = [
     src: "이거",
     title: "연락처 페이지 프로젝트",
     description: "",
-    site: "https://spectacular-biscotti-a1e458.netlify.app/",
-    href: "https://github.com/Soneungsu/redux",
+    site: "",
+    href: "",
     program: ["JavaScript", "React", "Redux", "Sass(SCSS)"],
   },
 ];
