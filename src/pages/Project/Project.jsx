@@ -19,7 +19,6 @@ const Project = () => {
                   </div>
                   <div className="project-description">
                     <h1>{item.title}</h1>
-                    <p>{item.description}</p>
                   </div>
                   <div className="project-skill">
                     {item.program.map((item) => (
