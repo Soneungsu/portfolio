@@ -23,7 +23,7 @@ const project = [
   {
     src: "이거",
     title: "연락처 페이지 프로젝트",
-    site: "https://phone-book-taupe.vercel.app/",
+    site: "https://phone-book-tau-gilt.vercel.app/",
     href: "https://github.com/Soneungsu/phone-book",
     program: ["JavaScript", "React", "Redux", "Sass(SCSS)"],
   },
