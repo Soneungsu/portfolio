@@ -31,7 +31,7 @@ const Main = () => {
             </section>
           </section>
         </section>
-        {/* skill sectioc */}
+        {/* skill section */}
         <Skills />
         {/* project section */}
         <Project />

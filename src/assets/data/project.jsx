@@ -16,14 +16,14 @@ const project = [
   {
     src: "이거",
     title: "포트폴리오 사이트",
-    site: "https://sparkly-baklava-95e00b.netlify.app/",
-    href: "https://github.com/Soneungsu/weatherAPI",
+    site: "https://portfolio-mu-lyart-61.vercel.app/",
+    href: "https://github.com/Soneungsu/portfolio",
     program: ["JavaScript", "React", "Sass(SCSS)"],
   },
   {
     src: "이거",
     title: "연락처 페이지 프로젝트",
-    site: "https://phone-book-tau-gilt.vercel.app/",
+    site: "https://phone-book-taupe.vercel.app/",
     href: "https://github.com/Soneungsu/phone-book",
     program: ["JavaScript", "React", "Redux", "Sass(SCSS)"],
   },
