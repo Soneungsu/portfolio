@@ -4,6 +4,13 @@ const project = [
     title: "쇼핑몰 프로젝트",
     site: "https://gentle-cucurucho-7cdd09.netlify.app/",
     href: "https://github.com/Soneungsu/shoppingmall",
+    program: ["HTML", "CSS", "JS", "JQery"],
+  },
+  {
+    src: "이거",
+    title: "쇼핑몰 프로젝트",
+    site: "https://gentle-cucurucho-7cdd09.netlify.app/",
+    href: "https://github.com/Soneungsu/shoppingmall",
     program: [],
   },
   {
